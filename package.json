@@ -21,6 +21,10 @@
     "@fortawesome/angular-fontawesome": "^0.11.1",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
+<<<<<<< HEAD
+=======
+    "@ng-bootstrap/ng-bootstrap": "^13.0.0",
+>>>>>>> e9294a0d404bd4afe04309df8ed9606d80581f8b
     "bootstrap": "^5.2.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

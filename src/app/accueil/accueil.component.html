@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><img src="../../assets/Logo.jpg" alt="logo"> <b>Free<span style="color:red">Tirage</span></b></li>
+        <li id="accueil">Accueil</li>
+        <li id="tirage">Faire tirage</li>
+        <li id="ajouterListe">Ajouter liste</li>
+    </ul>
+    <section>
+        <nav>
+            <style>
+                nav{
+                    position: relative;
+                }
+                ul{
+                    position: relative;
+                    top: 5px;
+                    background-color: #6B6B7B;
+                    font-size: 20px;
+                }
+                b{
+                    position: relative;
+                    top: 5px;
+                    font-size: 30px;
+                }
+                img{
+                    position: relative;
+                    height: 50px;
+                    width: 80px;
+                    border-radius: 10px;
+                    top: -2px;
+                }
+               nav h1{
+                    position: relative;
+                    text-align: center;
+                    color: white;
+                }
+                ul li{
+                    display: inline-block;
+                }
+                #accueil,#tirage,#ajouterListe{
+                   position: relative;
+                   left: 30%;
+                   font-size: 20px;
+                   color: white;
+                }
+                #accueil{
+                    position: relative;
+                    left: 46%;
+                }
+                #tirage{
+                    position: relative;
+                    left: 48%;
+                }
+                #ajouterListe{
+                    position: relative;
+                    left: 50%;
+                }
+                .cologne{
+                    background-color: #6B6B7B;
+                    height: 170px;
+                    border-radius: 12px;
+                }
+                .cologne h1{
+                    position: relative;
+                    top: 20px;
+                    font-size: 20px;
+                    color:white;
+                }
+                section{
+                    background-color: #A5A6F6;
+                    width: 100%;
+                    
+                }
+                .row{
+                    position: relative;
+                    top: 40px;
+                }
+                .nombre{
+                    color: white;
+                    font-size: 100px;
+                    position: relative;
+                    left: 20%;
+                }
+                th{
+                    background-color: #42546D;
+                }
+    
+                .ta{
+                    position: relative;
+                    top: 20px;
+                    background-color:#6B6B7B ;
+                    border-radius: 12px;
+                    width: 990px;
+                }
+                h6{
+                    color: white;
+                    position: relative;
+                    top: 10px;
+                    left: 48%;
+                }
+                h5{
+                    color: white;
+                    position: relative;
+                   
+                    left: 35%;
+                }
+                footer{
+                    background-color: #42546D;
+                    height: 40px;
+                }
+                td,th{
+                    border:1px solid white;
+                    color: white;
+                    text-align:center;            }
+                .titre{
+                    position: relative;
+                    left: 38%;
+                    color: white;
+                    font-size: 20px;
+                }
+                a {
+                    color: white;
+                }
+                @media screen and (max-width: 820px){
+                    section{
+                        background-color: red;
+                    }
+                    .cologne{
+                        position: relative;
+                        top: 2px;
+                        height: 100px;
+                        width: 500px;
+                        border-radius: 12px;
+                    }
+                    .nombre{
+                        font-size:50px;
+                        position: relative;
+                        left: 45%;
+                    }
+                    nav h1{
+                        font-size: 15px;
+                }
+                }
+            
+            </style>
+
+    
+                <h1> Bienvenue sur la page d'accueil de free tirage</h1>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-2 cologne" >
+                        <div>
+                            <h1>Nombre de liste tirée</h1>
+                            <span class="nombre">16</span>
+                        </div>
+                    </div>
+                    <div class="col-1 " ></div>
+                    <div class="col-2 cologne">
+                        <div>
+                            <h1>Nombre de liste tirée</h1>
+                            <span class="nombre">16</span>
+                        </div>
+                    </div>
+                    <div class="col-1 "></div>
+                    <div class="col-2 cologne" >
+                        <div>
+                            <h1>Nombre de liste tirée</h1>
+                            <span class="nombre">19</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-2"></div>
+                    <div class="col-8 ta">
+                        <h5>Nombre de Tirage par liste</h5>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col" style="width: 100px ;">N°</th>
+                                <th scope="col" style="width: 300px ;">
+                                    <fa-icon [icon]="liste"></fa-icon>
+                                    Liste
+                                </th>
+                                <th scope="col" style="width: 250px;">Nombre de tirage</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row">1</td>
+                                <td>Liste1</td>
+                                <td>12</td>
+                                <td><a href="#">Voir plus</a></td>
+                              </tr>
+                              <tr>
+                                <td scope="row">2</td>
+                                <td>Liste1</td>
+                                <td>12</td>
+                                <td><a href="#">Voir plus</a></td>
+                              </tr>
+                              <tr>
+                                <td scope="row">3</td>
+                                <td>Liste1</td>
+                                <td>12</td>
+                                <td><a href="#">Voir plus</a></td>
+                              </tr>
+                              <tr>
+                                <td scope="row">4</td>
+                                <td>Liste1</td>
+                                <td>12</td>
+                                <td><a href="#">Voir plus</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                 </div>
+        </nav><br><br><br>
+        <footer>
+            <h2>
+                <h6 >Copyright © 2022 ODK2</h6>
+                
+            </h2>
+         </footer>
+    </section>
+</body>
+</html>
