@@ -63,10 +63,15 @@
                     position: relative;
                     left: 50%;
                 }
+                #plhdertext{
+                    background-color: white;
+                }
                 .cologne{
+                    align-self: center;
                     background-color: #6B6B7B;
-                    height: 170px;
-                    border-radius: 12px;
+                    height: auto;
+                    width: auto;
+                    border-radius: 10px;
                 }
                 .cologne h1{
                     position: relative;
@@ -80,7 +85,10 @@
                     
                 }
                 .row{
+                    height: auto;
+                    width: auto;
                     position: relative;
+                    padding-top: 20px;
                     top: 40px;
                 }
                 .nombre{
@@ -134,10 +142,12 @@
                         background-color: red;
                     }
                     .cologne{
+                        padding-top: 50px;
+                        align-self: center;
                         position: relative;
                         top: 2px;
-                        height: 100px;
-                        width: 500px;
+                        height: auto;
+                        width: auto;
                         border-radius: 12px;
                     }
                     .nombre{
@@ -145,9 +155,16 @@
                         position: relative;
                         left: 45%;
                     }
+                    .formulaire {
+                        margin-top: 20px;
+                    }
+                    .row .cologne .btntirer {
+                        background-color: #6B6B7B;
+                        border-radius: 10px;
+                    }
                     nav h1{
                         font-size: 15px;
-                }
+                    }
                 }
             
             </style>
@@ -155,11 +172,24 @@
     
                 <h1>Laisser le hasard tirer au sort !</h1>
                 <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-2 cologne" >
+                    <div class="cologne" >
                         <div>
-                            <h1>Nombre de liste tirée</h1>
-                            <span class="nombre">16</span>
+                            <form class="form-group formulaire" action="">
+                                <input type="text" class="form-control" id="libelletirage" aria-describedby="nomtirage" placeholder="Nom du tirage">
+                                <br>
+                                <label for="liste" id="plhdertext">Selectionnez une liste :</label>
+                                <select name="listes" id="listes">
+                                    <option value="liste1">Liste1</option>
+                                    <option value="liste2">Liste2</option>
+                                    <option value="liste3">Liste3</option>
+                                    <option value="liste4">Liste4</option>
+                                </select>
+                                <br>
+                                <br>
+                                <input type="number" class="form-control" id="nombrepersonne" aria-describedby="nbpersonne" placeholder="Nombre de personne à tirer">
+                                <br>
+                                <button type="submit" class="btntirer">Faire le tirage</button>
+                            </form>
                         </div>
                     </div>
                 </div>
