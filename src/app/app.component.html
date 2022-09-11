@@ -1,4 +1,17 @@
-<app-tirage></app-tirage>
+<!--
+  Creation de la barre de navigation entre onglet
+-->
+<div>
+  <a routerLink="/accueil" routerLinkActive="active">Accueil</a>
+  <a routerLink="/tirage" routerLinkActive="active">Tirage</a>
+  <a routerLink="/details-liste" routerLinkActive="active">Details Liste</a>
+  <a routerLink="/details-postulants-tires" routerLinkActive="active">Details Postulants Tiré</a>
+  <a routerLink="/details-tirage" routerLinkActive="active">Details Tirage</a>
+  <a routerLink="/importer" routerLinkActive="active">Importation</a>
+
+</div>
+
+<router-outlet></router-outlet>
 
 <!-- <style>
   :host {
@@ -346,7 +359,7 @@
 <div class="boite" id="barre">
 <div id="barre1" >
   <div class="ba">
-     <h3>Nombre de liste tirée</h3> 
+     <h3>Nombre de liste tirée</h3>
   </div>
 </div>
 <div id="barre2">
