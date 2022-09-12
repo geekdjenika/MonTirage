@@ -63,29 +63,25 @@
                     position: relative;
                     left: 50%;
                 }
-                #plhdertext{
-                    background-color: white;
-                }
                 .cologne{
                     background-color: #6B6B7B;
-                    height: auto;
-                    width: auto;
-                    border-radius: 10px;
+                    height: 170px;
+                    border-radius: 12px;
                 }
-                
+                .cologne h1{
+                    position: relative;
+                    top: 20px;
+                    font-size: 20px;
+                    color:white;
+                }
                 section{
                     background-color: #A5A6F6;
                     width: 100%;
+
                 }
                 .row{
-                    height: 120px;
-                    width: auto;
                     position: relative;
-                    padding-top: 152px;
-                    top: 0;
-                    margin-left: 500px;
-                    align-items: center;
-                    text-align: center;
+                    top: 40px;
                 }
                 .nombre{
                     color: white;
@@ -96,7 +92,7 @@
                 th{
                     background-color: #42546D;
                 }
-    
+
                 .ta{
                     position: relative;
                     top: 20px;
@@ -113,13 +109,10 @@
                 h5{
                     color: white;
                     position: relative;
-                   
+
                     left: 35%;
                 }
                 footer{
-                    position: absolute;
-                    bottom: 0;
-                    width: 100%;
                     background-color: #42546D;
                     height: 40px;
                 }
@@ -136,56 +129,104 @@
                 a {
                     color: white;
                 }
-                .cologne .btntirer {
-                        background-color: #A5A6F6;
-                        border-radius: 10px;
-                        margin-bottom: 10px;
-                    }
                 @media screen and (max-width: 820px){
                     section{
-                        background-color: #A5A6F6;
+                        background-color: red;
                     }
-                    .formulaire {
-                        margin-top: 20px;
+                    .cologne{
+                        position: relative;
+                        top: 2px;
+                        height: 100px;
+                        width: 500px;
+                        border-radius: 12px;
                     }
-                    .cologne .btntirer {
-                        background-color: #6B6B7B;
-                        border-radius: 10px;
+                    .nombre{
+                        font-size:50px;
+                        position: relative;
+                        left: 45%;
                     }
                     nav h1{
                         font-size: 15px;
-                    }
                 }
-            
+                }
+
             </style>
 
-    
-                <h1>Laisser le hasard tirer au sort !</h1>
+
+                <h1> Bienvenue sur la page d'accueil de free tirage</h1>
                 <div class="row">
-                    <div class="cologne" >
-                        <form class="form-group formulaire" action="">
-                            <input type="text" class="form-control" id="libelletirage" aria-describedby="nomtirage" placeholder="Nom du tirage">
-                            <br>
-                            <label for="liste" id="plhdertext">Selectionnez une liste :</label>
-                            <select name="listes" id="listes">
-                                <option value="liste1">Liste1</option>
-                                <option value="liste2">Liste2</option>
-                                <option value="liste3">Liste3</option>
-                                <option value="liste4">Liste4</option>
-                            </select>
-                            <br>
-                            <br>
-                            <input type="number" class="form-control" id="nombrepersonne" aria-describedby="nbpersonne" placeholder="Nombre de personne à tirer">
-                            <br>
-                            <button type="submit" class="btntirer">Faire le tirage</button>
-                        </form>
+                    <div class="col-2"></div>
+                    <div class="col-2 cologne" >
+                        <div>
+                            <h1>Nombre de liste tirée</h1>
+                            <span class="nombre">16</span>
+                        </div>
+                    </div>
+                    <div class="col-1 " ></div>
+                    <div class="col-2 cologne">
+                        <div>
+                            <h1>Nombre de liste tirée</h1>
+                            <span class="nombre">16</span>
+                        </div>
+                    </div>
+                    <div class="col-1 "></div>
+                    <div class="col-2 cologne" >
+                        <div>
+                            <h1>Nombre de liste tirée</h1>
+                            <span class="nombre">19</span>
+                        </div>
                     </div>
                 </div>
+                <div class="row ">
+                    <div class="col-2"></div>
+                    <div class="col-8 ta">
+                        <h5>Nombre de Tirage par liste</h5>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col" style="width: 100px ;">N°</th>
+                                <th scope="col" style="width: 300px ;">
+                                    <fa-icon [icon]="liste"></fa-icon>
+                                    Liste
+                                </th>
+                                <th scope="col" style="width: 250px;">Nombre de tirage</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row">1</td>
+                                <td>Liste1</td>
+                                <td>12</td>
+                                <td><a href="#">Voir plus</a></td>
+                              </tr>
+                              <tr>
+                                <td scope="row">2</td>
+                                <td>Liste1</td>
+                                <td>12</td>
+                                <td><a href="#">Voir plus</a></td>
+                              </tr>
+                              <tr>
+                                <td scope="row">3</td>
+                                <td>Liste1</td>
+                                <td>12</td>
+                                <td><a href="#">Voir plus</a></td>
+                              </tr>
+                              <tr>
+                                <td scope="row">4</td>
+                                <td>Liste1</td>
+                                <td>12</td>
+                                <td><a href="#">Voir plus</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                 </div>
         </nav><br><br><br>
         <footer>
             <h2>
                 <h6 >Copyright © 2022 ODK2</h6>
-                
+
             </h2>
          </footer>
     </section>
