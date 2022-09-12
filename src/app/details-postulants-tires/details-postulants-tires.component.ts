@@ -1,3 +1,4 @@
+import { faList } from '@fortawesome/free-solid-svg-icons';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,6 @@ export class DetailsPostulantsTiresComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  liste=faList;
 
 }
