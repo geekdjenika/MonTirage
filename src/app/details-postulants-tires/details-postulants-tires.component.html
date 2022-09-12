@@ -1,1 +1,112 @@
-<p>details-postulants-tires works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><img src="../../assets/Logo.jpg" alt="logo"> <b>Free<span style="color:red">Tirage</span></b></li>
+        <li id="accueil"><a routerLink="/accueil">Accueil</a></li>
+        <li id="tirage"><a routerLink="/tirage">Faire tirage</a></li>
+        <li id="ajouterListe"><a routerLink="/importer">Ajouter liste</a></li>
+    </ul>
+    <section>
+        <nav>
+                <h1> Details des Postulants de le liste "liste"</h1>
+<!--                 <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-2 cologne" >
+                        <div>
+                            <h1>Nombre de liste tirée</h1>
+                            <span class="nombre">16</span>
+                        </div>
+                    </div>
+                    <div class="col-1 " ></div>
+                    <div class="col-2 cologne">
+                        <div>
+                            <h1>Nombre de liste tirée</h1>
+                            <span class="nombre">16</span>
+                        </div>
+                    </div>
+                    <div class="col-1 "></div>
+                    <div class="col-2 cologne" >
+                        <div>
+                            <h1>Nombre de liste tirée</h1>
+                            <span class="nombre">19</span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row ">
+                    <div class="col-2"></div>
+                    <div class="col-8 ta">
+                        <!-- <h5>Nombre de Tirage par liste</h5> -->
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col" style="width: 100px ;">N°</th>
+                                <th scope="col" style="width: 150px;">Nom</th>
+                                <th scope="col" style="width: 150px;">Prenom</th>
+                                <th scope="col" style="width: 150px;">Âge</th>
+                                <th scope="col" style="width: 150px;">Tel :</th>
+                                <th scope="col" style="width: 150px;">Email</th>
+                                <th scope="col" style="width: 300px ;">
+                                    <fa-icon [icon]="liste"></fa-icon>
+                                    Liste d'inscription
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row">1</td>
+                                  <td>DJENIKA</td>
+                                  <td>Geek</td>
+                                  <td>21</td>
+                                  <td>78 81 67 44</td>
+                                  <td>mail</td>
+                                  <td>ODK 2</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">2</td>
+                                <td>CAMARA</td>
+                                <td>MAmdy</td>
+                                <td>20</td>
+                                <td>91 22 88 29</td>
+                                <td>mail</td>
+                                <td>ODK 2</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">3</td>
+                                <td>DIAWARA</td>
+                                <td>Karim</td>
+                                <td>20</td>
+                                <td>83 91 86 99</td>
+                                <td>mail</td>
+                                <td>ODK 2</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">4</td>
+                                <td>Ballo</td>
+                                <td>Ibrahima</td>
+                                <td>21</td>
+                                <td>51 07 59 79 </td>
+                                <td>mail</td>
+                                <td>ODK 2</td>
+                              </tr>
+                            </tbody>
+                            <button class="button"><span>Next</span></button>
+                          </table>
+                    </div>
+                 </div>
+        </nav><br><br><br>
+        <footer>
+            <h2>
+                <h6 >Copyright © 2022 ODK2</h6>
+
+            </h2>
+         </footer>
+    </section>
+</body>
+</html>
