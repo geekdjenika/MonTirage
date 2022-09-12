@@ -24,7 +24,7 @@ import { DetailsPostulantsTiresComponent } from './details-postulants-tires/deta
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
