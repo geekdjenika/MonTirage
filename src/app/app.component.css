@@ -1,4 +1,4 @@
-.active{
+/* .active{
   font-weight: bolder;
   background-color: rgba(20, 123, 219, 0.753);
   color: aquamarine;
@@ -404,7 +404,7 @@ a {
     width: 1920px;
   }
 
-  /* Responsive Styles */
+  /* Responsive Styles
   @media screen and (max-width: 767px) {
     .card-container > *:not(.circle-link) ,
     .terminal {
@@ -450,4 +450,4 @@ a {
     left: 30px;
   }
 
-
+ */
