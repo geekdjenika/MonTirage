@@ -11,16 +11,22 @@ export class AccueilComponent implements OnInit {
   accueil:any;
   constructor(private service : Accueil) { }
 
+  
+
   ngOnInit(): void {
+    
     this.service.getListe().subscribe(data=>{
       console.log(data)
       this.accueil=data;
     })
+
+    this.service.getNombreTirageParListe('liste1').subscribe(data=>{
+    this.nbtirage_liste = data
+  })
+
   }
   liste=faList;
   nbtirage_liste!: Object;
-  tirageparliste = this.service.getNombreTirageParListe().subscribe(data=>{
-    this.nbtirage_liste = data
-  })
+  
 
 }
