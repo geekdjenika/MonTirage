@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faList} from '@fortawesome/free-solid-svg-icons'
+import { faList} from '@fortawesome/free-solid-svg-icons';
+import { Accueil } from '../services/acueil.service';
 
 @Component({
   selector: 'app-accueil',
@@ -7,11 +8,19 @@ import { faList} from '@fortawesome/free-solid-svg-icons'
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent implements OnInit {
-
-  constructor() { }
+  accueil:any;
+  constructor(private service : Accueil) { }
 
   ngOnInit(): void {
+    this.service.getListe().subscribe(data=>{
+      console.log(data)
+      this.accueil=data;
+    })
   }
   liste=faList;
+  nbtirage_liste!: Object;
+  tirageparliste = this.service.getNombreTirageParListe().subscribe(data=>{
+    this.nbtirage_liste = data
+  })
 
 }

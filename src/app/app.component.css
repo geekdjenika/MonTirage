@@ -1,4 +1,4 @@
-nav{
+/* nav{
   position: relative;
 }
 ul{
@@ -136,6 +136,7 @@ a {
   nav h1{
       font-size: 15px;
 }
+<<<<<<< HEAD
 }
 .footer{
   background-color:  #42546D;;
@@ -147,3 +148,6 @@ a {
   color: #fff;
   font-size: 1rem;
 }
+=======
+} */
+>>>>>>> f842dfb79656732843495edace0891d8c602366b

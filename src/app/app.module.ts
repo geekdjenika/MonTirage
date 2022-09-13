@@ -12,8 +12,12 @@ import { ImporterComponent } from './importer/importer.component';
 import { DetailsListeComponent } from './details-liste/details-liste.component';
 import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
 import { DetailsPostulantsTiresComponent } from './details-postulants-tires/details-postulants-tires.component';
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
 
+=======
+import { HttpClientModule } from '@angular/common/http'
+>>>>>>> f842dfb79656732843495edace0891d8c602366b
 //Creation de lien pour la naviguation entre les differents onglets
 const routes: Routes = [
   { path:'accueil', component:AccueilComponent },
@@ -37,11 +41,17 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+<<<<<<< HEAD
     AppRoutingModule,
     FontAwesomeModule,
     RouterModule.forRoot(routes),
     FormsModule,
     HttpClientModule,
+=======
+    RouterModule.forRoot(routes),
+    FontAwesomeModule,
+    HttpClientModule
+>>>>>>> f842dfb79656732843495edace0891d8c602366b
   ],
   providers: [],
   bootstrap: [AppComponent]

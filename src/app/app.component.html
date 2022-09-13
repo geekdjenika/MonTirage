@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
 <router-outlet></router-outlet>
@@ -14,3 +15,140 @@
   <p class="my-3 text-center" >@copy 2022 MonTirage </p>
 
 
+=======
+
+
+ <style>
+
+body{
+  background-color:url(../assets/Logo.jpg);
+}
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: #42546D;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+
+
+  .terminal::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 4px;
+  }
+ 
+  footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Responsive Styles */
+
+  .position{
+    position: relative;
+    left: -100px;
+    font-size: 30px;
+  }
+  .accueil{
+    position: relative;
+    left: -20px;
+  }
+  .liste{
+    position: relative;
+    left: 60px;
+  }
+  .faire{
+    position: relative;
+    left: 30px;
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+
+</style> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<router-outlet></router-outlet>
+ <div class="toolbar w-100" role="banner">
+
+  <img
+  style="font-size: 30px; border-radius:10%;"
+  width="60"
+  alt="Angular Logo"
+  src="../assets/Logo.jpg"
+/>
+  <span style="font-size:20px;">Free <b style="color:red ;"> Tirage</b></span>
+    <div class="spacer"></div>
+    <div class="position">
+      <a routerLink="/accueil" style="color:white ; font-size: 20px;" class="header acueil">
+        <!-- <fa-icon [icon]="accueil"></fa-icon> -->
+        Accueil
+      </a>
+      <a routerLink="/tirage" style="color:white ; font-size: 20px;" class="header faire">
+        <!-- <fa-icon [icon]="faire"></fa-icon> -->
+        Faire un tirage
+      </a>
+      <a routerLink="/importer" style="color:White ; font-size: 20px;" class="header liste">
+        <!-- <fa-icon [icon]="nouvelle"></fa-icon> -->
+        Nouvelle liste
+      </a>
+    </div>
+</div> 
+
+   
+  <footer style="padding-top: 100px;">
+    <h2>
+        <h6 >Copyright © 2022 ODK2</h6>
+    </h2>
+  </footer>
+</body>
+</html>
+
+
+>>>>>>> f842dfb79656732843495edace0891d8c602366b
