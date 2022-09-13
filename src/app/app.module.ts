@@ -11,7 +11,7 @@ import { ImporterComponent } from './importer/importer.component';
 import { DetailsListeComponent } from './details-liste/details-liste.component';
 import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
 import { DetailsPostulantsTiresComponent } from './details-postulants-tires/details-postulants-tires.component';
-
+import { HttpClientModule } from '@angular/common/http'
 //Creation de lien pour la naviguation entre les differents onglets
 const routes: Routes = [
   { path:'accueil', component:AccueilComponent },
@@ -35,13 +35,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
-    AppRoutingModule,
-    FontAwesomeModule,
-=======
     RouterModule.forRoot(routes),
-    FontAwesomeModule
->>>>>>> 46b367b083af4515742cd2c88ee79700d08fa65d
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
