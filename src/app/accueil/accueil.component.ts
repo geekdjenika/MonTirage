@@ -7,14 +7,15 @@ import { Accueil } from '../services/acueil.service';
   templateUrl: './accueil.component.html',
   styleUrls: ['./accueil.component.css']
 })
+
 export class AccueilComponent implements OnInit {
   accueil:any;
   constructor(private service : Accueil) { }
 
-  
+
 
   ngOnInit(): void {
-    
+
     this.service.getListe().subscribe(data=>{
       console.log(data)
       this.accueil=data;
@@ -27,6 +28,6 @@ export class AccueilComponent implements OnInit {
   }
   liste=faList;
   nbtirage_liste!: Object;
-  
+
 
 }

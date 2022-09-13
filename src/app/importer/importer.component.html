@@ -7,7 +7,7 @@
             <label class="titreLeft" for="">Importer une liste</label>
             <div class="formLeft">
               <form id="import" #f="ngForm" (ngSubmit)="newtirage(f)">
-                <input type="text" [(ngModel)]="libelle" id="libelle" name="libelle" placeholder="Nom de la liste" ngModel required>
+                <input type="String" [(ngModel)]="libelle" id="libelle" name="libelle" placeholder="Nom de la liste" ngModel required>
                 <input type = "file" id = "file" name ="file" ngModel required placeholder="Joindre un fichier"/>
                 <button type="submit" [disabled]="f.form.invalid">Importer</button>
               </form>
