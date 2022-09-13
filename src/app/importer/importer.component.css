@@ -1,0 +1,81 @@
+.titreLeft{
+    font-size: 35px;
+    margin: 1% 5%;
+    display: revert;
+    display: flex;
+    text-align: center;
+    line-height: normal;
+    justify-content: center;
+}
+
+#import{
+    margin: 3% 10%;
+    display: grid;
+    row-gap: 5%;
+    justify-content: center;
+}
+
+
+input{
+    height: 40px;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+mat-form-field{
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 5px 15px;
+}
+.formLeft > form > button{
+    height: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #845EC2;
+    font-size: 20px;
+    border-width: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+mat-tab-group{
+    display: none;
+}
+
+@media only screen and (max-width: 755px) {
+
+    mat-tab-group{
+        display: contents;
+    }
+
+}
+
+td,th{
+  color: white;
+}
+caption{
+   padding-left:300px;color: white; font-size: 40px;
+ }
+th{
+  background-color: #42546D;
+}
+@media screen and (max-width: 800px) and (min-width: 500px) {
+   .col-8{
+     background-color: red;
+     padding-left: auto;
+   }
+   caption{
+     padding-left:50px;
+     font-size: 20px;
+   }
+   tr{
+     width: 40px;
+     font-size: 10px;
+   }
+
+ }

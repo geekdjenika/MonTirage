@@ -12,6 +12,7 @@ import { ImporterComponent } from './importer/importer.component';
 import { DetailsListeComponent } from './details-liste/details-liste.component';
 import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
 import { DetailsPostulantsTiresComponent } from './details-postulants-tires/details-postulants-tires.component';
+import { FormsModule } from '@angular/forms';
 
 //Creation de lien pour la naviguation entre les differents onglets
 const routes: Routes = [
@@ -39,9 +40,8 @@ const routes: Routes = [
     AppRoutingModule,
     FontAwesomeModule,
     RouterModule.forRoot(routes),
-    FontAwesomeModule,
+    FormsModule,
     HttpClientModule,
-    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

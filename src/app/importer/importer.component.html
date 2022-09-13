@@ -1,1 +1,22 @@
-<p>importer works!</p>
+<br>
+  <br>
+    <br>
+      <div class="row" style="background-color: #6B6B7B; margin: 10%;">
+        <div class="col-2"></div>
+          <div class="col-8" style="background-color: #6B6B7B; border-radius: 15px;">
+            <label class="titreLeft" for="">Importer une liste</label>
+            <div class="formLeft">
+              <form id="import" #f="ngForm" (ngSubmit)="newtirage(f)">
+                <input type="text" [(ngModel)]="libelle" id="libelle" name="libelle" placeholder="Nom de la liste" ngModel required>
+                <input type = "file" id = "file" name ="file" ngModel required placeholder="Joindre un fichier"/>
+                <button type="submit" [disabled]="f.form.invalid">Importer</button>
+              </form>
+            </div>
+          </div>
+
+
+
+
+
+
+
