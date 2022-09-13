@@ -12,7 +12,7 @@ export class Accueil {
 
    return this.http.get(`http://localhost:8080/liste/lister`);
   }
-  getNombreTirageParListe(): Observable<Object> {
-    return this.http.get('http://localhost:8080/tirage/tirageparliste/liste1');
+  getNombreTirageParListe(libelle: Object): Observable<Object> {
+    return this.http.get('http://localhost:8080/tirage/tirageparliste/'+{libelle});
   }
 }
