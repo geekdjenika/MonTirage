@@ -36,9 +36,18 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+<<<<<<< HEAD
+    AppRoutingModule,
+    FontAwesomeModule,
+=======
     RouterModule.forRoot(routes),
+<<<<<<< HEAD
     FontAwesomeModule,
     HttpClientModule
+=======
+    FontAwesomeModule
+>>>>>>> 46b367b083af4515742cd2c88ee79700d08fa65d
+>>>>>>> b82c56a2151d2d38d21ccb8f2c059dc581fe28c1
   ],
   providers: [],
   bootstrap: [AppComponent]
