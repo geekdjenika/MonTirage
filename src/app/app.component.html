@@ -1,20 +1,4 @@
 
-<!-- Toolbar -->
-<!-- <div class="toolbar" role="banner">
-<router-outlet></router-outlet>
-
-<ul>
-    <li><img src="../../assets/Logo.jpg" alt="logo"> <b>Free<span style="color:red">Tirage</span></b></li>
-    <li id="accueil"><a routerLink="/accueil">Accueil</a></li>
-    <li id="tirage"><a routerLink="/tirage">Faire tirage</a></li>
-    <li id="ajouterListe"><a routerLink="/importer">Ajouter liste</a></li>
-</ul>
-
-
-<div class="footer card-footer text-muted" >
-  <p class="my-3 text-center" >@copy 2022 MonTirage </p> -->
-
-
 
 <router-outlet></router-outlet>
  <div class="toolbar w-100" role="banner">
@@ -29,24 +13,21 @@
     <div class="spacer"></div>
     <div class="position">
       <a routerLink="/accueil" style="color:white ; font-size: 20px;" class="header acueil">
-         <fa-icon [icon]="accueil"></fa-icon>
         Accueil
       </a>
       <a routerLink="/tirage" style="color:white ; font-size: 20px;" class="header faire">
-         <fa-icon [icon]="faire"></fa-icon>
         Faire un tirage
       </a>
       <a routerLink="/importer" style="color:White ; font-size: 20px;" class="header liste">
-        <fa-icon [icon]="nouvelle"></fa-icon>
         Nouvelle liste
       </a>
     </div>
 </div>
 
 
-  <footer style="padding-top: 100px;">
+  <footer>
     <h2>
-        <h6 >Copyright © 2022 ODK2</h6>
+        Copyright © 2022 ODK2
     </h2>
   </footer>
 

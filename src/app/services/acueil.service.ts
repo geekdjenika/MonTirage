@@ -15,4 +15,14 @@ export class Accueil {
   getNombreTirageParListe(libelle: Object): Observable<Object> {
     return this.http.get('http://localhost:8080/tirage/tirageparliste/'+{libelle});
   }
+  getNombreliste():Observable<Object>{
+    return this.http.get(`http://localhost:8080/liste/nombreliste`);
+  }
+  getNombreTirage():Observable<Object>{
+    return this.http.get(`http://localhost:8080/tirage/nombretirage`);
+  }
+  getNombreListeTiree():Observable<Object>{
+    return this.http.get(`http://localhost:8080/tirage/nombrelistetiree`);
+  }
+  
 }

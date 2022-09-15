@@ -10,6 +10,9 @@ import { Accueil } from '../services/acueil.service';
 
 export class AccueilComponent implements OnInit {
   accueil:any;
+  NombreListe:any;
+  NombreTirage:any;
+  NombreListeTiree:any;
   constructor(private service : Accueil) { }
 
 
@@ -23,6 +26,27 @@ export class AccueilComponent implements OnInit {
 
     this.service.getNombreTirageParListe('liste1').subscribe(data=>{
     this.nbtirage_liste = data
+  })
+  this.service.getNombreliste().subscribe({next: data=>{
+    this.NombreListe=data
+  },error:(e)=>{
+    this.NombreListe="null";
+    }
+
+  })
+
+  this.service.getNombreTirage().subscribe({next: data=>{
+    this.NombreTirage=data;
+  },error:(e)=>{
+     this.NombreTirage="null";
+  }
+  
+  })
+  this.service.getNombreListeTiree().subscribe({next: data=>{
+    this.NombreListeTiree=data;
+    }, error:(e)=>{
+      this.NombreListeTiree="null"
+    }
   })
 
   }

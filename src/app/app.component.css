@@ -1,80 +1,77 @@
-
-body{
-  background-color:url(../assets/Logo.jpg);
+p {
+  margin: 0;
 }
 
-  p {
-    margin: 0;
-  }
+.spacer {
+  flex: 1;
+}
 
-  .spacer {
-    flex: 1;
-  }
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background-color: #42546D;
+  color: white;
+  font-weight: 600;
+}
 
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    background-color: #42546D;
-    color: white;
-    font-weight: 600;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-  }
+.toolbar img {
+  margin: 0 16px;
+}
 
 
 
-  .terminal::before {
-    content: "\2022 \2022 \2022";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background: rgb(58, 58, 58);
-    color: #c2c3c4;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 0;
-    padding: 14px 0;
-    text-indent: 4px;
-  }
+.terminal::before {
+  content: "\2022 \2022 \2022";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: rgb(58, 58, 58);
+  color: #c2c3c4;
+  width: 100%;
+  font-size: 2rem;
+  line-height: 0;
+  padding: 14px 0;
+  text-indent: 4px;
+}
 
-  footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
-  }
+footer {
+  background-color: #42546D;
+  height: 40px;
+  margin-top: 4%;
+}
 
-  footer a {
-    display: flex;
-    align-items: center;
-  }
+footer h2{
+position: relative;
+top: 15%;
+color: white;
+text-align: center;
+font-size: 20px;
+}
+a{
+text-decoration: none;
+}
 
-  /* Responsive Styles */
+/* Responsive Styles */
 
-  .position{
-    position: relative;
-    left: -100px;
-    font-size: 30px;
-  }
-  .accueil{
-    position: relative;
-    left: -20px;
-  }
-  .liste{
-    position: relative;
-    left: 60px;
-  }
-  .faire{
-    position: relative;
-    left: 30px;
-  }
-  a{
-    text-decoration: none;
-  }
+.position{
+  position: relative;
+  left: -100px;
+  font-size: 30px;
+}
+.accueil{
+  position: relative;
+  left: -20px;
+}
+.liste{
+  position: relative;
+  left: 60px;
+}
+.faire{
+  position: relative;
+  left: 30px;
+}
