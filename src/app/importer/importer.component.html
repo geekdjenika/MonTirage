@@ -6,10 +6,10 @@
           <div class="col-8" style="background-color: #6B6B7B; border-radius: 15px;">
             <label class="titreLeft" for="">Importer une liste</label>
             <div class="formLeft">
-              <form id="import" #f="ngForm" (ngSubmit)="newtirage(f)">
-                <input type="String" [(ngModel)]="libelle" id="libelle" name="libelle" placeholder="Nom de la liste" ngModel required>
-                <input type = "file" id = "file" name ="file" ngModel required placeholder="Joindre un fichier"/>
-                <button type="submit" [disabled]="f.form.invalid">Importer</button>
+              <form id="import" >
+                <input type="String" [(ngModel)]="libelle" id="libelle" name="libelle" placeholder="Nom de la liste" required>
+                <input type="file" id = "files" name ="files" (change)="televerser($event)" required placeholder="Joindre un fichier"/>
+                <button type="submit" (click)="importerList()">Importer</button>
               </form>
             </div>
           </div>
