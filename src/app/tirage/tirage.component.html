@@ -133,22 +133,19 @@
                         <div class="form row">
                             <form class="col-6">
                             <div class="form-group py-3">
-                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nom du tirage">
+                              <input type="text" class="form-control" [(ngModel)]="nomtirage" name="nomtirage" id="exampleFormControlInput1" placeholder="Nom du tirage">
                             </div><br>
                             <div class="form-group">
-                              <select class="form-control" id="exampleFormControlSelect1">
+                              <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="libelleliste" name="libelleliste">
                                 <option>Selectionner une liste</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                <option *ngFor="let listes of liste" >{{listes.libelleliste}}</option>
                               </select>
                             </div><br>
                             <div class="form-group">
-                                <input type="number" class="form-control" placeholder="Nombre de personne">
+                                <input type="number" class="form-control" placeholder="Nombre de personne" [(ngModel)]="nombreatire" name="nombreatire">
                             </div><br>
                             <div class="form-group">
-                                <button style="background-color:#42546D ; color: aliceblue;" class="form-control" type="submit">Faire le tirage</button>
+                                <button style="background-color:#42546D ; color: aliceblue;" class="form-control" type="submit" (click)="tirer()">Faire le tirage</button>
                             </div>
                           </form>
                           <div class="col-6 py-3"><img src="../../assets/font.jpg" height="250px" width="300px"  alt=""></div>
