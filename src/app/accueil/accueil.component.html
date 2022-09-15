@@ -1,313 +1,56 @@
 
-            <style>
+           <section>
+                <nav>
+                    <div class="section row col text-center overflow-hidden">
+                        <h1 class="py-5" style="color:#42546d ;">Bienvenue sur la page d'accueil de free tirage</h1>
+                        <div class="row  table ">
+                            <div class="col-12 cologne1 row col-md-4" >
+                                <div class="col-8 cologne">
+                                    <h1>Nombre de liste tirée</h1>
+                                    <span class="nombre">{{NombreListeTiree}}</span>
+                                </div>
+                            </div>
 
-                ul{
-                    position: relative;
-                    top: 5px;
-                    background-color: #6B6B7B;
-                    font-size: 20px;
-                }
-                b{
-                    position: relative;
-                    top: 5px;
-                    font-size: 30px;
-                }
-                img{
-                    position: relative;
-                    height: 50px;
-                    width: 80px;
-                    border-radius: 10px;
-                    top: -2px;
-                }
-               nav h1{
-                    position: relative;
-                    text-align: center;
-                    color: white;
-                }
-                ul li{
-                    display: inline-block;
-                }
-                #accueil,#tirage,#ajouterListe{
-                   position: relative;
-                   left: 30%;
-                   font-size: 20px;
-                   color: white;
-                }
-                #accueil{
-                    position: relative;
-                    left: 46%;
-                }
-                #tirage{
-                    position: relative;
-                    left: 48%;
-                }
-                #ajouterListe{
-                    position: relative;
-                    left: 50%;
-                }
-                .cologne{
-                    background-color: #6B6B7B;
-                    height: 170px;
-                    border-radius: 12px;
-                }
-                .cologne h1{
-                    position: relative;
-                    top: 20px;
-                    font-size: 20px;
-                    color:white;
-                }
-                section{
-                    background-color: #A5A6F6;
-                    width: 100%;
-
-                }
-                 .section{
-                 padding-top: 20px;
-                }
-                .nombre{
-                    color: white;
-                    font-size: 100px;
-                    position: relative;
-                    left: 20%;
-                }
-                th{
-                    background-color: #42546D;
-                }
-
-                .ta{
-                    position: relative;
-                    top: 20px;
-                    background-color:#6B6B7B ;
-                    border-radius: 12px;
-                    width: 990px;
-                }
-                h6{
-                    color: white;
-                    position: relative;
-                    top: 10px;
-                    left: 48%;
-                }
-                h5{
-                    color: white;
-                    position: relative;
-
-                    left: 35%;
-                }
-                footer{
-                    background-color: #42546D;
-                    height: 40px;
-                }
-                td,th{
-                    border:1px solid white;
-                    color: white;
-                    text-align:center;            }
-                .titre{
-                    position: relative;
-                    left: 38%;
-                    color: white;
-                    font-size: 20px;
-                }
-                a {
-                    color: white;
-                }
-                @media screen and (max-width: 820px){
-                    section{
-                        background-color: red;
-                    }
-                    .cologne{
-                        position: relative;
-                        top: 2px;
-                        height: 100px;
-                        width: 500px;
-                        border-radius: 12px;
-                    }
-                    .nombre{
-                        font-size:50px;
-                        position: relative;
-                        left: 45%;
-                    }
-                    nav h1{
-                        font-size: 15px;
-                }
-                }
-
-            </style>
-
-
-                <h1> Bienvenue sur la page d'accueil de free tirage</h1>
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-2 cologne" >
-                        <div>
-                          <style>
-                  b{
-                      position: relative;
-                      top: 5px;
-                      font-size: 30px;
-                  }
-
-                 nav h1{
-                      position: relative;
-                      text-align: center;
-                      color: white;
-                  }
-                  ul li{
-                      display: inline-block;
-                  }
-                  #accueil,#tirage,#ajouterListe{
-                     position: relative;
-                     left: 30%;
-                     font-size: 20px;
-                     color: white;
-                  }
-                  #accueil{
-                      position: relative;
-                      left: 46%;
-                  }
-                  #tirage{
-                      position: relative;
-                      left: 48%;
-                  }
-                  #ajouterListe{
-                      position: relative;
-                      left: 50%;
-                  }
-                  .cologne{
-                      height: 170px;
-                      width: 250px;
-                      border: 3px solid #6B6B7B ;
-                      border-radius: 12px;
-                  }
-                  .cologne h1{
-                      position: relative;
-                      text-align: center;
-                      top: 20px;
-                      font-size: 20px;
-                      color:#42546D ;
-                  }
-                  .row{
-                      position: relative;
-                      top: 40px;
-                  }
-                  .nombre{
-                      color: #42546D ;
-                      text-align: center;
-                      font-size: 100px;
-                      position: relative;
-
-                  }
-                  th{
-                      background-color: #42546D;
-                  }
-
-                  .ta{
-                    border: 3px solid #6B6B7B;
-                      border-radius: 12px;
-
-                  }
-                  h6{
-                      color: #6B6B7B;
-                      position: relative;
-                      top: 10px;
-                      left: 48%;
-                  }
-                  h5{
-                      color: #6B6B7B;
-                      position: relative;
-                  }
-                  td,th{
-                      border:1px solid #6B6B7B;
-                      text-align:center;
-                      }
-                  .titre{
-                      position: relative;
-                      left: 38%;
-                      color: white;
-                      font-size: 20px;
-                  }
-
-                  @media screen and (max-width: 820px){
-                      section{
-                          background-color: red;
-                      }
-                      .cologne{
-                          position: relative;
-                          top: 2px;
-                          height: 100px;
-                          width: 500px;
-                          border-radius: 12px;
-                      }
-                      .nombre{
-                          font-size:50px;
-                          position: relative;
-                          left: 45%;
-                      }
-                      nav h1{
-                          font-size: 15px;
-                  }
-                  }
-                  a{
-                    text-decoration: none;
-                  }
-
-              </style>
-    <section>
-        <nav>
-            <div class="section row col text-center overflow-hidden">
-                <h1 class="text-center "> Bienvenue sur la page d'accueil de free tirage</h1>
-                <div class="row col-12 mx-5">
-                    <div class="col-12 bien row col-md-4" >
-                        <div class="col-2"></div>
-                        <div class="col-8 cologne">
-                            <h1>Nombre de liste tirée</h1>
-                            <span class="nombre">16</span>
+                            <div class="col-12 row col-md-4" >
+                                <div class="col-8 cologne">
+                                    <h1>Nombre de  tirage</h1>
+                                    <span class="nombre">{{NombreTirage}}</span>
+                                </div>
+                            </div>
+                            <div class="col-12 row col-md-4" >
+                                <div class="col-8 cologne">
+                                    <h1 style="font-size: 18px ;">Nombre de liste postulant</h1>
+                                    <span class="nombre">{{NombreListe}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" ta1 container overflow-hidden">
+                            <div class="row ta">
+                                <h5>Nombre de Tirage par liste</h5>
+                                <table class="table table-sm">
+                                    <thead>
+                                    <tr style="color:white ;">
+                                        <th style="width: 100px ;">N°</th>
+                                        <th style="width: 300px ;">
+                                            <fa-icon [icon]="liste"></fa-icon>
+                                            Liste
+                                        </th>
+                                        <th  style="width: 250px;">Nombre de tirage</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr *ngFor="let liste of accueil">
+                                        <td>{{liste.id}}</td>
+                                        <td >{{liste. libelleliste}}</td>
+                                        <td>{{nbtirage_liste}}</td>
+                                        <td><a routerLink="/details-liste">Voir plus</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-12 row col-md-4" >
-                        <div class="col-2"></div>
-                        <div class="col-8 cologne">
-                            <h1>Nombre de liste tirée</h1>
-                            <span class="nombre">{{nbtirage_liste}}</span>
-                        </div>
-                    </div>
-
-                    <div class="col-12 row col-md-4" >
-                        <div class="col-2"></div>
-                        <div class="col-8 cologne">
-                            <h1>Nombre de liste tirée</h1>
-                            <span class="nombre">19</span>
-                        </div>
-                    </div>
-                </div>
-                <div class=" ta1 container overflow-hidden">
-                    <div class="row ta">
-                        <h5>Nombre de Tirage par liste</h5>
-                        <table class="table table-sm">
-                            <thead>
-                              <tr style="color:white ;">
-                                <th style="width: 100px ;">N°</th>
-                                <th style="width: 300px ;">
-                                    <fa-icon [icon]="liste"></fa-icon>
-                                    Liste
-                                </th>
-                                <th  style="width: 250px;">Nombre de tirage</th>
-                                <th>Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr *ngFor="let liste of accueil">
-                                <td>{{liste.id}}</td>
-                                <td >{{liste. libelleliste}}</td>
-                                <td>{{nbtirage_liste}}</td>
-                                <td><a routerLink="/details-liste">Voir plus</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                 </div>
-            </div>
-   
-        </nav>
-        <br><br><br>
-</section>
+        
+                </nav>
+        </section>

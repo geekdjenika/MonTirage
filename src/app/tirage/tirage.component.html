@@ -1,137 +1,10 @@
-
-            <style>
-                .form{
-                    height: 300px;
-                    border-radius: 12px;
-                    width: 800px;
-                    border: 2px solid #6B6B7B;
-                }
-                .ta1{
-                    padding-top: 60px;
-                    width: 80%;
-                }
-                 .section{
-                 padding-top: 20px;
-                }
-                  b{
-                      position: relative;
-                      top: 5px;
-                      font-size: 30px;
-                  }
-
-                 nav h1{
-                      position: relative;
-                      text-align: center;
-                      color: white;
-                  }
-                  ul li{
-                      display: inline-block;
-                  }
-                  #accueil,#tirage,#ajouterListe{
-                     position: relative;
-                     left: 30%;
-                     font-size: 20px;
-                     color: white;
-                  }
-                  #accueil{
-                      position: relative;
-                      left: 46%;
-                  }
-                  #tirage{
-                      position: relative;
-                      left: 48%;
-                  }
-                  #ajouterListe{
-                      position: relative;
-                      left: 50%;
-                  }
-                  .cologne{
-                      background-color: #6B6B7B;
-                      height: 170px;
-                      width: 250px;
-                      border-radius: 12px;
-                  }
-                  .cologne h1{
-                      position: relative;
-                      text-align: center;
-                      top: 20px;
-                      font-size: 20px;
-                      color:white;
-                  }
-                  .row{
-                      position: relative;
-                      top: 40px;
-                  }
-                  .nombre{
-                      color: white;
-                      text-align: center;
-                      font-size: 100px;
-                      position: relative;
-                    
-                  }
-                  th{
-                      background-color: #42546D;
-                  }
-      
-                  .ta{
-                  
-                      border-radius: 12px;
-                      height: 400px;
-  
-                  }
-                  h6{
-                      color: white;
-                      position: relative;
-                      top: 10px;
-                      left: 48%;
-                  }
-                  h5{
-                      color: white;
-                      position: relative;
-                  }
-                  td,th{
-                      border:1px solid white;
-                      color: white;
-                      text-align:center;            }
-                  .titre{
-                      position: relative;
-                      left: 38%;
-                      color: white;
-                      font-size: 20px;
-                  }
-
-                  @media screen and (max-width: 820px){
-                      section{
-                          background-color: red;
-                      }
-                      .cologne{
-                          position: relative;
-                          top: 2px;
-                          height: 100px;
-                          width: 500px;
-                          border-radius: 12px;
-                      }
-                      .nombre{
-                          font-size:50px;
-                          position: relative;
-                          left: 45%;
-                      }
-                      nav h1{
-                          font-size: 15px;
-                  }
-                  }
-                  .form-control{
-                    width: 400px;
-                  }
-              
-              </style>
-                
             <div class="section row col text-center overflow-hidden">
                 <h1 class="text-center"> Laisser le hazard tirer au sort</h1>
                 <div class=" ta1 container overflow-hidden">
                     <div class="row ta mx-5">
                         <div class="form row">
                             <form class="col-6">
+                                <br>
                             <div class="form-group py-3">
                               <input type="text" class="form-control" [(ngModel)]="nomtirage" name="nomtirage" id="exampleFormControlInput1" placeholder="Nom du tirage">
                             </div><br>
@@ -140,7 +13,7 @@
                                 <option>Selectionner une liste</option>
                                 <option *ngFor="let listes of liste" >{{listes.libelleliste}}</option>
                               </select>
-                            </div><br>
+                            </div>
                             <div class="form-group">
                                 <input type="number" class="form-control" placeholder="Nombre de personne" [(ngModel)]="nombreatire" name="nombreatire">
                             </div><br>
@@ -149,10 +22,7 @@
                             </div>
                           </form>
                           <div class="col-6 py-3"><img src="../../assets/font.jpg" height="250px" width="300px"  alt=""></div>
-                        </div>
-                        
-                        
-                        
+                        </div>                        
                     </div>
                 </div>
             </div>

@@ -1,0 +1,64 @@
+.form{
+    height: 300px;
+    border-radius: 12px;
+    width: 800px;
+    border: 3px solid #6B6B7B;
+}
+.ta1{
+    padding-top: 30px;
+    width: 80%;
+    margin-left: 205px;
+}
+ .section{
+ padding-top: 20px;
+}
+  b{
+      position: relative;
+      top: 5px;
+      font-size: 30px;
+  }
+
+ nav h1{
+      position: relative;
+      text-align: center;
+      color: white;
+  }
+  
+  .row{
+      position: relative;
+      top: 35px;
+  }
+  .nombre{
+      color: white;
+      text-align: center;
+      font-size: 100px;
+      position: relative;
+    
+  }
+  th{
+      background-color: #42546D;
+  }
+
+  .ta{
+    margin-top: -2%;
+      border-radius: 12px;
+      height: 430px;
+  }
+  h6{
+      color: white;
+      position: relative;
+      top: 10px;
+      left: 48%;
+  }
+  h5{
+      color: white;
+      position: relative;
+  }
+
+  
+  .form-control{
+    width: 350px;
+  }
+  h1{
+    margin-top: 40px;
+  }
