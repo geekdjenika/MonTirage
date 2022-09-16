@@ -1,18 +1,37 @@
-<br>
-  <br>
-    <br>
-      <div class="row" style="background-color: #6B6B7B; margin: 10%;">
-        <div class="col-2"></div>
-          <div class="col-8" style="background-color: #6B6B7B; border-radius: 15px;">
-            <label class="titreLeft" for="">Importer une liste</label>
-            <div class="formLeft">
-              <form id="import" >
-                <input type="String" [(ngModel)]="libelle" id="libelle" name="libelle" placeholder="Nom de la liste" required>
-                <input type="file" id = "files" name ="files" (change)="televerser($event)" required placeholder="Joindre un fichier"/>
-                <button type="submit" (click)="importerList()">Importer</button>
-              </form>
-            </div>
-          </div>
+
+ <section>
+  <div class="row" >
+    <div class="col-8" >
+      <label class="titreLeft" for="">Importer une liste</label>
+      <div class="formLeft">
+        <form id="import" >
+          <input type="String" [(ngModel)]="libelle" id="libelle" name="libelle" placeholder="Nom de la liste" required>
+          <input type="file" id = "files" name ="files" (change)="televerser($event)" required placeholder="Joindre un fichier"/>
+          <button type="submit" (click)="importerList()">Importer</button>
+        </form>
+      </div> 
+    </div>
+</div>
+ </section>
+
+      <style>
+        .row{
+          margin-top: 20px;
+          border-radius: 12px;
+          border: 3px solid #42546D;
+          width: 700px;
+          margin-left: 300px;
+          height: 300px;
+        } 
+        section{
+                margin-top:10%;
+                width: 100%;
+                height: 410px;
+            }
+
+
+
+      </style>
 
 
 

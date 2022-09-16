@@ -13,13 +13,14 @@ import { DetailsListeComponent } from './details-liste/details-liste.component';
 import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
 import { DetailsPostulantsTiresComponent } from './details-postulants-tires/details-postulants-tires.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 //Creation de lien pour la naviguation entre les differents onglets
 const routes: Routes = [
   { path:'accueil', component:AccueilComponent },
-  { path:'details-liste', component:DetailsListeComponent },
-  { path:'details-postulants-tires', component:DetailsPostulantsTiresComponent },
+  { path:'details-liste/:id', component:DetailsListeComponent },
+  { path:'details-postulants-tires/:libelle', component:DetailsPostulantsTiresComponent },
   { path:'details-tirage', component:DetailsTirageComponent },
   { path:'importer', component:ImporterComponent },
   { path:'tirage', component:TirageComponent }
@@ -46,7 +47,9 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     FontAwesomeModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // MatPaginatorModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

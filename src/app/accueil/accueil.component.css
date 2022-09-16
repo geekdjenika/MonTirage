@@ -48,6 +48,9 @@
             .table{
                 margin-top: 10px;
             }
+            .titre1{
+                font-size: 15px ;
+            }
             .cologne1{
                 margin-left: 90px;
                 width: 400px;
@@ -57,23 +60,53 @@
                 margin-top: -12%;
                 color:aliceblue;
             }
-            /* @media screen and (max-width: 820px){
-                section{
-                    background-color: red;
+             @media screen and (max-width: 767px) and (min-width: 500px) {
+                .cologne1{
+                    width: 800px;
+                    margin-left: -10px;
                 }
                 .cologne{
-                    position: relative;
-                    top: 2px;
+                    margin-left: 120px;
                     height: 100px;
-                    width: 500px;
-                    border-radius: 12px;
+                    margin-top: 5px;
                 }
                 .nombre{
-                    font-size:50px;
-                    position: relative;
-                    left: 45%;
+                    font-size: 25px;
                 }
-                nav h1{
+                h1{
+                    font-size:21px 
+                }
+                .table{
+                    margin-top: -40px;
+                }
+            } 
+            @media screen and (max-width: 960px) and (min-width:767px){
+
+                .section{
+                    background-color: red;
+                }
+                
+                .cologne1{
+                    width: 250px;
+                    margin-left: 40px;
+                }
+
+                .nombre{
+                    margin-top:10%;
+                    font-size: 30px;
+                }
+                h1{
+                    font-size:30px
+                }
+                .table{
+                    margin-top: -40px;
+                }
+                .titre,.titre1{
+                    margin-top: -15px;
+                }
+                .titre1{
                     font-size: 15px;
+                }
+
+
             }
-            } */

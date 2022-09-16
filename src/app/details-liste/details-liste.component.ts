@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Accueil } from '../services/acueil.service';
 
 @Component({
   selector: 'app-details-liste',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details-liste.component.css']
 })
 export class DetailsListeComponent implements OnInit {
-
-  constructor() { }
-
+  detailsliste:any;
+  page:number=1;
+  constructor(private service: Accueil, private route:ActivatedRoute) { }
   ngOnInit(): void {
+    const id = this.route.snapshot.params['id'];
+    this.detailsliste=this.service.getTirageParListe(id);
+    this.service.getTirageParListe(id).subscribe(data=>{
+      this.detailsliste = data;
+      console.log(data);
+    })
   }
-
 }

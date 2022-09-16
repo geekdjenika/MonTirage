@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { faList} from '@fortawesome/free-solid-svg-icons';
 import { Accueil } from '../services/acueil.service';
 
@@ -13,20 +14,20 @@ export class AccueilComponent implements OnInit {
   NombreListe:any;
   NombreTirage:any;
   NombreListeTiree:any;
-  constructor(private service : Accueil) { }
-
-
+  nbtirage_liste:any;
+  constructor(private service : Accueil, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-
-    this.service.getListe().subscribe(data=>{
+    let id = this.route.snapshot.paramMap.get('id');
+    this.service.getListeTiree().subscribe(data=>{
       console.log(data)
       this.accueil=data;
     })
 
-    this.service.getNombreTirageParListe('liste1').subscribe(data=>{
+    this.service.getNTPL().subscribe(data=>{
     this.nbtirage_liste = data
   })
+
   this.service.getNombreliste().subscribe({next: data=>{
     this.NombreListe=data
   },error:(e)=>{
@@ -51,7 +52,7 @@ export class AccueilComponent implements OnInit {
 
   }
   liste=faList;
-  nbtirage_liste!: Object;
+  
 
 
 }

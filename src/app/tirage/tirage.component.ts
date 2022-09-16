@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Accueil } from '../services/acueil.service';
 import { HttpClient } from '@angular/common/http';
+import {faHome,faRotate,faFileCirclePlus,faPlusCircle, faCaretDown} from '@fortawesome/free-solid-svg-icons';
+
 
 export interface TirageModel{
   idtirage: number,
@@ -47,5 +49,6 @@ nomtirage:any;
 
 
   }
+  bare=faCaretDown
 
 }

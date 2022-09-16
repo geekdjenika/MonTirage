@@ -12,8 +12,17 @@ export class Accueil {
 
    return this.http.get(`http://localhost:8080/liste/lister`);
   }
-  getNombreTirageParListe(libelle: Object): Observable<Object> {
-    return this.http.get('http://localhost:8080/tirage/tirageparliste/'+{libelle});
+
+  getListeTiree(): Observable<object> {
+
+    return this.http.get(`http://localhost:8080/liste/tiree`);
+   }
+
+  getNombreTirageParListe(libelle: String): Observable<object> {
+    return this.http.get(`http://localhost:8080/tirage/tirageparliste/${libelle}`);
+  }
+  getNTPL():Observable<Object>{
+    return this.http.get(`http://localhost:8080/tirage/ntpl`)
   }
   getNombreliste():Observable<Object>{
     return this.http.get(`http://localhost:8080/liste/nombreliste`);
@@ -21,8 +30,14 @@ export class Accueil {
   getNombreTirage():Observable<Object>{
     return this.http.get(`http://localhost:8080/tirage/nombretirage`);
   }
+
   getNombreListeTiree():Observable<Object>{
     return this.http.get(`http://localhost:8080/tirage/nombrelistetiree`);
   }
-  
+  getTirageParListe(id: number):Observable<Object>{
+    return this.http.get(`http://localhost:8080/tirage/tiragesuruneliste/${id}`)
+  }
+getPostulantParTirage(libelletirage: String):Observable<Object>{
+  return this.http.get(`http://localhost:8080/tire/afficherpostulanttire/${libelletirage}`)
+}
 }

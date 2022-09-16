@@ -1,13 +1,18 @@
  <br><br><br>
  <style>
-  td,th{
-    color: white;
-  }
-  caption{
-    padding-left:300px;color: white; font-size: 40px;
+  section{
+    margin-top:3%;
+    width: 100%;
+    height: 450px;
+
+}
+  td{
+    color:#42546D ;
+    border: 1px solid #42546D;
   }
   th{
     background-color: #42546D;
+    color: white;
   }
   @media screen and  (max-width: 800px) and (min-width: 500px) {
     .col-8{
@@ -27,85 +32,46 @@
                 }
 
   }
+  table{
+    border-radius: 50px;
+    border: 3px solid #42546D;
+    margin-left: 2%;
+  }
+  h2{
+    color:#42546D;
+  }
  </style>
-<div class="section row col-12 text-center overflow-hidden">
-  <div class="row container">
-    <div class="col-2"></div>
-    <div class="col-8 " style="background-color: #6B6B7B; border-radius: 12px;" >
-        <table class="table caption-top">
-      <caption >Liste des tirages de la list1</caption>
-      <thead>
-        <tr>
-          <th scope="col">N°</th>
-          <th scope="col">Libelle</th>
-          <th scope="col">Date</th>
-          <th scope="col">Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td scope="row">1</td>
-          <td>Groupe1</td>
-          <td>Date</td>
-          <td>Voir plus...</td>
-        </tr>
-        <tr>
-          <td scope="row">2</td>
-          <td>Groupe2</td>
-          <td>Date</td>
-          <td>Voir plus...</td>
-        </tr>
-        <tr>
-          <td scope="row">3</td>
-          <td>Groupe3</td>
-          <td>Date</td>
-          <td>Voir plus...</td>
-        </tr>
-      </tbody>
-    </table>
+<section>
+  <div class="section row col-12 text-center overflow-hidden">
+    <div class="row container">
+      <h2>Liste des tirages de la list1</h2>
+      <div class="table1 " style=" border-radius: 12px;" >
+          <table class="table caption-top">
+        <thead>
+          <tr>
+            <th>N°</th>
+            <th>Libelle</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tirage of detailsliste | paginate:{itemsPerPage:5,currentPage:page} let i = index">
+            <td scope="row">{{i+1}}</td>
+            <td>{{tirage[2]}}</td>
+            <td>{{tirage[1]}}</td>
+            <td><a [routerLink]="['/details-postulants-tires',tirage[2]]">
+              <button class="btn">Voir plus...</button></a>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+  <pagination-controls (pageChange)="page=$event" nextLabel="Suivant" previousLabel="Précedent">
+  </pagination-controls>
+  
+      </div>
     </div>
-
+  
   </div>
-  <div class="row container py-5">
-    <div class="col-2"></div>
-    <div class="col-8" style="background-color: #6B6B7B; border-radius: 12px;">
-        <table class="table caption-top">
-      <caption>Liste des Postulants Groupe1</caption>
-      <thead>
-        <tr>
-          <th scope="col">Email</th>
-          <th scope="col">Nom</th>
-          <th scope="col">Numéro</th>
-          <th scope="col">Prénom</th>
-          <th scope="col">Tirage</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td scope="row">camara@</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td scope="row">bil@</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td scope="row">mamad@</td>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>@mdo</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-
-  </div>
-</div>
+</section>
 

@@ -1,25 +1,44 @@
+
             <div class="section row col text-center overflow-hidden">
+            
                 <h1 class="text-center"> Laisser le hazard tirer au sort</h1>
+              
                 <div class=" ta1 container overflow-hidden">
+                  <!-- <fa-icon class="ii" [icon]="bare"></fa-icon> -->
                     <div class="row ta mx-5">
                         <div class="form row">
                             <form class="col-6">
                                 <br>
                             <div class="form-group py-3">
                               <input type="text" class="form-control" [(ngModel)]="nomtirage" name="nomtirage" id="exampleFormControlInput1" placeholder="Nom du tirage">
-                            </div><br>
+                            </div>
                             <div class="form-group">
-                              <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="libelleliste" name="libelleliste">
+                              <select class="optio"  [(ngModel)]="libelleliste" name="libelleliste">
                                 <option>Selectionner une liste</option>
                                 <option *ngFor="let listes of liste" >{{listes.libelleliste}}</option>
                               </select>
                             </div>
+                            <style>
+                              .optio{ 
+                                margin-left: -10px;
+                                border: 1px solid #CED4DA;
+                                height: 40px;
+                                width: 350px;
+                                border-radius: 12px;
+                              }
+                            </style>
                             <div class="form-group">
                                 <input type="number" class="form-control" placeholder="Nombre de personne" [(ngModel)]="nombreatire" name="nombreatire">
-                            </div><br>
+                            </div>
                             <div class="form-group">
                                 <button style="background-color:#42546D ; color: aliceblue;" class="form-control" type="submit" (click)="tirer()">Faire le tirage</button>
                             </div>
+                            <span> Cliquer 
+                            <a routerLink="/importer"  class="header liste">
+                              ici
+                            </a> pour importer une nouvelle liste
+                            </span>
+
                           </form>
                           <div class="col-6 py-3"><img src="../../assets/font.jpg" height="250px" width="300px"  alt=""></div>
                         </div>                        

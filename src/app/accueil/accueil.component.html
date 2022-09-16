@@ -6,20 +6,20 @@
                         <div class="row  table ">
                             <div class="col-12 cologne1 row col-md-4" >
                                 <div class="col-8 cologne">
-                                    <h1>Nombre de liste tirée</h1>
+                                    <h1 class="titre">Nombre de liste tirée</h1>
                                     <span class="nombre">{{NombreListeTiree}}</span>
                                 </div>
                             </div>
 
                             <div class="col-12 row col-md-4" >
                                 <div class="col-8 cologne">
-                                    <h1>Nombre de  tirage</h1>
+                                    <h1 class="titre">Nombre de  tirage</h1>
                                     <span class="nombre">{{NombreTirage}}</span>
                                 </div>
                             </div>
                             <div class="col-12 row col-md-4" >
                                 <div class="col-8 cologne">
-                                    <h1 style="font-size: 18px ;">Nombre de liste postulant</h1>
+                                    <h1 class="titre1">Nombre de liste postulant</h1>
                                     <span class="nombre">{{NombreListe}}</span>
                                 </div>
                             </div>
@@ -32,7 +32,6 @@
                                     <tr style="color:white ;">
                                         <th style="width: 100px ;">N°</th>
                                         <th style="width: 300px ;">
-                                            <fa-icon [icon]="liste"></fa-icon>
                                             Liste
                                         </th>
                                         <th  style="width: 250px;">Nombre de tirage</th>
@@ -40,14 +39,18 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr *ngFor="let liste of accueil">
-                                        <td>{{liste.id}}</td>
-                                        <td >{{liste. libelleliste}}</td>
-                                        <td>{{nbtirage_liste}}</td>
-                                        <td><a routerLink="/details-liste">Voir plus</a></td>
+                                    <tr *ngFor="let liste of accueil; let i = index">
+                                        <td>{{i+1}}</td>
+                                        <td >{{liste.libelleliste}}</td>
+                                        <td>{{nbtirage_liste[i]}}</td>
+                                        <td><a [routerLink]="['/details-liste',liste.id]">
+                                            <button class="btn ">Voir plus...</button></a>
+                                        </td>
                                     </tr>
                                     </tbody>
                                 </table>
+                                <!-- <pagination-controls (pageChange)="page=$event" nextLabel="Suivant" previousLabel="Précedent">
+                                </pagination-controls> -->
                             </div>
                         </div>
                     </div>
