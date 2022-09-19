@@ -12,6 +12,8 @@ import { ImporterComponent } from './importer/importer.component';
 import { DetailsListeComponent } from './details-liste/details-liste.component';
 import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
 import { DetailsPostulantsTiresComponent } from './details-postulants-tires/details-postulants-tires.component';
+import { Liste } from './details-liste/liste';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 
@@ -36,7 +38,7 @@ const routes: Routes = [
     ImporterComponent,
     DetailsListeComponent,
     DetailsTirageComponent,
-    DetailsPostulantsTiresComponent
+    DetailsPostulantsTiresComponent,
   ],
   imports: [
     BrowserModule,

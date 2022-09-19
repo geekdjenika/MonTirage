@@ -39,7 +39,7 @@
 <section>
   <div class="section row col-12 text-center overflow-hidden">
     <div class="row container">
-      <h2>Liste des postulants tires dans le tirage  </h2>
+      <h2>Liste des postulants tires dans {{nom_tirage.libelletirage}}  </h2>
       <div class="table1 " style=" border-radius: 12px;" >
           <table class="table caption-top">
         <thead>
@@ -52,7 +52,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let postulant of detailPostulant| paginate:{itemsPerPage:5,currentPage:page} let i = index">
+          <tr *ngFor="let postulant of detailPostulant| paginate:{itemsPerPage:8,currentPage:page} let i = index">
             <td scope="row">{{postulant[i]}}</td>
             <td>{{postulant.nom}}</td>
             <td>{{postulant.prenom}}</td>

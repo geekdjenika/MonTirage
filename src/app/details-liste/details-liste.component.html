@@ -44,7 +44,7 @@
 <section>
   <div class="section row col-12 text-center overflow-hidden">
     <div class="row container">
-      <h2>Liste des tirages de la list1</h2>
+      <h2>Liste des tirages de {{nomliste.libelleliste}}</h2>
       <div class="table1 " style=" border-radius: 12px;" >
           <table class="table caption-top">
         <thead>
@@ -56,7 +56,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let tirage of detailsliste | paginate:{itemsPerPage:5,currentPage:page} let i = index">
+          <tr *ngFor="let tirage of detailsliste | paginate:{itemsPerPage:10,currentPage:page} let i = index">
             <td scope="row">{{i+1}}</td>
             <td>{{tirage[2]}}</td>
             <td>{{tirage[1]}}</td>

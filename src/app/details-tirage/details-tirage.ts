@@ -1,5 +1,5 @@
 export class DetailsTirage {
-        id !: number;
+    id !: number;
     libelleliste !: string;
     dateliste !:Date;
 }

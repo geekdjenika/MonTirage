@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Liste } from '../details-liste/liste';
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +38,13 @@ export class Accueil {
   getTirageParListe(id: number):Observable<Object>{
     return this.http.get(`http://localhost:8080/tirage/tiragesuruneliste/${id}`)
   }
-getPostulantParTirage(libelletirage: String):Observable<Object>{
-  return this.http.get(`http://localhost:8080/tire/afficherpostulanttire/${libelletirage}`)
-}
+  getPostulantParTirage(libelletirage: String):Observable<Object>{
+    return this.http.get(`http://localhost:8080/tire/afficherpostulanttire/${libelletirage}`)
+  }
+  getListeById(idliste:number):any {
+    return this.http.get(`http://localhost:8080/liste/affichernomliste/${idliste}`)
+  }
+  getTirageParLibelle(libelletirage : String) : any {
+    return this.http.get(`http://localhost:8080/tirage/tirageparnom/${libelletirage}`)
+  }
 }

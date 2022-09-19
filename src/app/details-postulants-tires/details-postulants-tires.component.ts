@@ -2,6 +2,7 @@ import { faList } from '@fortawesome/free-solid-svg-icons';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Accueil } from '../services/acueil.service';
+import { TirageModel } from '../tirage/tirage.component';
 
 @Component({
   selector: 'app-details-postulants-tires',
@@ -11,7 +12,7 @@ import { Accueil } from '../services/acueil.service';
 export class DetailsPostulantsTiresComponent implements OnInit {
   libelletirage!:String;
   detailPostulant:any;
-
+  nom_tirage!: TirageModel
   page:number=1;
   constructor(private service: Accueil, private route:ActivatedRoute) { }
 
@@ -23,6 +24,12 @@ export class DetailsPostulantsTiresComponent implements OnInit {
       console.log(data);
 
     })
+    this.nom_tirage = this.service.getTirageParLibelle(libelletirage)
+    this.service.getTirageParLibelle(libelletirage).subscribe((data: TirageModel)=>{
+      this.nom_tirage = data;
+      console.log(data)
+    })
+
   }
   liste=faList;
 
