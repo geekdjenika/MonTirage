@@ -23,7 +23,8 @@ const routes: Routes = [
   { path:'details-postulants-tires/:libelle', component:DetailsPostulantsTiresComponent },
   { path:'details-tirage', component:DetailsTirageComponent },
   { path:'importer', component:ImporterComponent },
-  { path:'tirage', component:TirageComponent }
+  { path:'tirage', component:TirageComponent },
+  { path: '', component:AccueilComponent}
 
 ]
 

@@ -16,8 +16,8 @@ export interface TirageModel{
 })
 export class TirageComponent implements OnInit {
   libelleliste:String='';
-  nombreatire!:number;
   formulaireTirage! : FormGroup;
+  nombreatire!:number;
   
   tirageOjet: TirageModel = {
     idtirage: 0,
