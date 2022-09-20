@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Accueil } from '../services/acueil.service';
 import { HttpClient } from '@angular/common/http';
+import Swal from 'sweetalert2';
 import {faHome,faRotate,faFileCirclePlus,faPlusCircle, faCaretDown} from '@fortawesome/free-solid-svg-icons';
 
 
@@ -39,16 +40,25 @@ nomtirage:any;
     
     this.http.post(`${url}/${this.libelleliste}/${this.nombreatire}`,this.tirageOjet).subscribe({
       next: data=> {
-        alert('Tirage effectué avec succès!');
+        // alert('Tirage effectué avec succès!');
+        this.succesTirage();
         this.libelleliste='';
       },
       error: (e) => {
-        alert('Problème survenu lors du tirage !')
+        // alert('Problème survenu lors du tirage !')
+        this.erreurTirage()
       }
     })
+    
 
 
   }
   bare=faCaretDown
+  succesTirage() {
+    Swal.fire('Félicitations ...', 'Tirage effectué avec succès!', 'success');
+  }
+  erreurTirage() {
+    Swal.fire('Erreur lors du tirage ...', 'Verifiez tous les champs et réessayez !', 'error');
+  }
 
 }

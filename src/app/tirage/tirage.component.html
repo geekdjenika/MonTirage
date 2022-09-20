@@ -28,7 +28,7 @@
                               }
                             </style>
                             <div class="form-group">
-                                <input type="number" class="form-control" placeholder="Nombre de personne" [(ngModel)]="nombreatire" name="nombreatire">
+                                <input type="number" class="form-control" placeholder="Nombre de personne" [(ngModel)]="nombreatire" name="nombreatire" min="1"  max="20">
                             </div>
                             <div class="form-group">
                                 <button style="background-color:#42546D ; color: aliceblue;" class="form-control" type="submit" (click)="tirer()">Faire le tirage</button>
