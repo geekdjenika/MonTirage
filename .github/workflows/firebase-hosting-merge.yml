@@ -11,6 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install Node
+        uses: actions/setup-node@v1
+      - with:
+        node-version: 12.8
+      - name: npm dependencies
+      - run: npm install
+      - name: Build
       - run: ng build --configuration production
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
