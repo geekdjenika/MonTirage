@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "y",
+    "public": "dist/mon-tirage",
     "ignore": [
       "firebase.json",
       "**/.*",
